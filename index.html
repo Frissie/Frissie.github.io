@@ -1,0 +1,28 @@
+<header>
+    <style>
+        #header {
+            color: red;
+        }
+    </style>
+</header>
+<body>
+    <div>
+        <h1 id="header">Hello World!</h1>
+    </div>
+    <button id="button">
+        Press Me!
+    </button>
+    
+</body>
+<script>
+    var title = document.getElementById('header');
+    var btn = document.getElementById('button');
+    btn.addEventListener('click', function(event){
+        if (title.style.color == 'red') {
+            title.style.color = 'blue'
+        } 
+        else{
+            title.style.color = 'red'
+        }
+    });
+</script>
